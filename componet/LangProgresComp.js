@@ -65,14 +65,20 @@ const LangProgres = () => {
             <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={phpLan}>PHP</button>
             <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={typeScript}>TypeScript</button>
             <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={tailwindcss}>Tailwindcss</button>
+            <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={phpLan}>PHP</button>
+            <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={typeScript}>TypeScript</button>
+            <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={tailwindcss}>Tailwindcss</button>
               </div>  
               
-                <LanguageTopup 
+              <LanguageTopup 
                     title={currentSkill.title}
                     percentage={currentSkill.percent}
-                ></LanguageTopup>    
+                ></LanguageTopup> 
+
+              </div>
+                  
         </div>
-    </div>
+    
     
     
         </>

@@ -7,7 +7,8 @@ const LanguageTopup = (props) => {
     
     return ( 
         <>
-        
+        <div className="grid grid-cols-1 justify-items-center">
+                  <h2 className="ml-2 font-extrabol text-2xl">{props.title}</h2>
     <CircularProgressbar className="w-60 h-80 ml-20 mr-10 text-justify"
   value={props.percentage}
   text={`${props.percentage}%`}
@@ -52,6 +53,7 @@ const LanguageTopup = (props) => {
 
   }}
 />
+</div>
         </>
      );
 }
