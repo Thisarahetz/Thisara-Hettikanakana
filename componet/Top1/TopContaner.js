@@ -8,7 +8,7 @@ const TopContaner = () => {
       <div className="texture">
         <Container className="container-top">
           <Row className="section-top">
-            <Col xs={12} md={6} className="section-top-left">
+            <Col xs={12} md={6} className="section-top-left mt-7">
               <img className="max-w-md mx-auto" src="/assets/lastpic.png" />
             </Col>
             <Col xs={12} md={6} className="section-top-right shadow">

@@ -1,6 +1,7 @@
 import TopContaner from "../componet/Top1/TopContaner";
 import Head from 'next/head'
 import Footer from "../componet/Navbar/Footer/Footer";
+import LangProgres from "../componet/LangProgresComp";
 
 export default function Home() {
   return (
@@ -32,11 +33,12 @@ export default function Home() {
           src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
           
         ></script>
-
+        <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
       
     
     
     <TopContaner/>
+    <LangProgres/>
     <Footer/>
     </div>
     
