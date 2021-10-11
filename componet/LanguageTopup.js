@@ -1,21 +1,27 @@
 import React from "react";
 // Import react-circular-progressbar module and styles
 import {
-    CircularProgressbar,buildStyles
+    CircularProgressbar
   } from "react-circular-progressbar";
+
+  import "react-circular-progressbar/dist/styles.css";
 const LanguageTopup = (props) => {
     
     return ( 
         <>
         <div className="grid grid-cols-1 justify-items-center">
-                  <h2 className="ml-2 font-extrabol text-2xl">{props.title}</h2>
-    <CircularProgressbar className="w-60 h-80 ml-20 mr-10 text-justify"
+        <img width="8%" src={props.imageTag}/>
+                  <h2 className="ml-2 mb-3 font-extrabol text-4xl">{props.title}</h2>
+    <CircularProgressbar className="w-60 h-80 ml-20 mr-10" 
+
+    
   value={props.percentage}
   text={`${props.percentage}%`}
   styles={{
     rotation: 0,
     // Customize the root svg element
-    root: {},
+    root: {
+    },
     // Customize the path, i.e. the "completed progress"
     path: {
       // Path color
@@ -43,13 +49,16 @@ const LanguageTopup = (props) => {
       // Text color
       fill: '#f7f8f9',
       // Text size
-      fontSize: '16px',    
+      fontSize: '16px', 
+      
+
       
     },
     // Customize background - only used when the `background` prop is true
     background: {
       fill: '#3e98c7',
     },
+    
 
   }}
 />

@@ -2,6 +2,8 @@ import TopContaner from "../componet/Top1/TopContaner";
 import Head from 'next/head'
 import Footer from "../componet/Navbar/Footer/Footer";
 import LangProgres from "../componet/LangProgresComp";
+import Project from "../componet/projectAbout/Project";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -39,6 +41,8 @@ export default function Home() {
     
     <TopContaner/>
     <LangProgres/>
+    <Project/>
+    <About/>
     <Footer/>
     </div>
     

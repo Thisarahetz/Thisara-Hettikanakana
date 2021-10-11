@@ -1,0 +1,30 @@
+.container-1 .swiper-container {
+    width: 90%;
+    margin: 400px;
+    background: #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.swiper-1{
+  padding-left: 80px;
+    padding-right: 80px;
+    max-width: 500px;
+}
+
+
+.box{
+    padding: 10px;
+    padding-right: 80px;
+    max-width: 400px;
+    height: 400px;
+transition: 1s;
+
+
+}
+.swiperBox{
+    height: 500px;
+    padding-top: 40px;
+}
+
