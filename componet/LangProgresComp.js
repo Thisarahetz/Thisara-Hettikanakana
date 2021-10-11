@@ -5,52 +5,68 @@ const LangProgres = () => {
     const [currentSkill,stateCurent] = useState(
         {
             'title': 'HTML',
-            'percent': '95',
+            'percent': '100',
+            'imageTag': 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'
         }
     
     )
     const JavaScript = () => {
         const nextLag = {
-            'title': 'JavaScript',
+            'title': 'JAVA SCRIPT',
             'percent': '85',
+            'imageTag': 'https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg'
         }
         stateCurent(nextLag);
     }
     const Java = () => {
         const nextLag = {
-            'title': 'java',
+            'title': 'SPRING BOOT',
             'percent': '75',
+            'imageTag': 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg'
         }
         stateCurent(nextLag);
     }
     const ReactLan = () => {
         const nextLag = {
-            'title': 'React',
+            'title': 'REACT',
             'percent': '65',
+            'imageTag': 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
         }
         stateCurent(nextLag);
     }
     const phpLan = () => {
         const nextLag = {
-            'title': 'php',
+            'title': 'LARAVEL',
             'percent': '75',
+            'imageTag': 'https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg'
         }
         stateCurent(nextLag);
     }
     const typeScript = () => {
         const nextLag = {
-            'title': 'typescript',
-            'percent': '75',
+            'title': 'TYPESCRIPT',
+            'percent': '55',
+            'imageTag': 'https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg'
         }
         stateCurent(nextLag);
     }
     const tailwindcss = () => {
         const nextLag = {
-            'title': 'tailwindcss',
+            'title': 'TAILWINDCSS',
             'percent': '65',
+            'imageTag': 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
         }
         stateCurent(nextLag);
     }
+    const python = () => {
+        const nextLag = {
+            'title': 'PYTHON',
+            'percent': '45',
+            'imageTag': 'https://www.vectorlogo.zone/logos/python/python-icon.svg'
+        }
+        stateCurent(nextLag);
+    }
+    
     
     return (
         <>
@@ -68,11 +84,13 @@ const LangProgres = () => {
             <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={phpLan}>PHP</button>
             <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={typeScript}>TypeScript</button>
             <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={tailwindcss}>Tailwindcss</button>
+            <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={python}>Python</button>
               </div>  
               
               <LanguageTopup 
                     title={currentSkill.title}
                     percentage={currentSkill.percent}
+                    imageTag={currentSkill.imageTag}
                 ></LanguageTopup> 
 
               </div>
