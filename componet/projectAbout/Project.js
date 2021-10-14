@@ -37,12 +37,12 @@ const project = () => {
                                             width={900}
                                             height={480}/></Card>
                         <Card.Body className="bg-dark">
-                            <Card.Title className="text-light">PREZ Online Presentation System</Card.Title>
+                            <Card.Title className="text-light underline">PREZ Online Presentation System</Card.Title>
                             <Card.Text style={{ fontSize: '14px', color:'#ffffff'}}>
                             PREZ system is lagerest database in Presentation.Customer can download and view template
                             
                             </Card.Text>
-                            <Link href="https://stackoverflow.com/">
+                            <Link href="https://github.com/Thisarahetz/Online_gaming_site">
                             <Button variant="primary">Source code</Button>
                             </Link>
                         </Card.Body>
@@ -55,11 +55,13 @@ const project = () => {
                                             width={900}
                                             height={480}/></Card>
                         <Card.Body className="bg-dark">
-                            <Card.Title className="text-light">Buying and selling gaming account</Card.Title>
+                            <Card.Title className="text-light underline">Buying and selling gaming account</Card.Title>
                             <Card.Text style={{ fontSize: '14px',color: 'white'}}>
                            If you want to buy ranked gaming account or sale ranked account for you can use that site
                            </Card.Text>
+                           <Link href="https://github.com/Thisarahetz/Online_gaming_site">
                             <Button variant="primary">Source code</Button>
+                            </Link>
                         </Card.Body>
                         </Card>
                     </SwiperSlide>
@@ -69,12 +71,14 @@ const project = () => {
                                             width={900}
                                             height={480}/></Card>
                         <Card.Body className="bg-dark">
-                            <Card.Title className="text-light">Shilpa education</Card.Title>
+                            <Card.Title className="text-light underline">Shilpa education</Card.Title>
                             <Card.Text className="text-light" style={{ fontSize: '14px'}} >
                             Shilpa Education Institute Management System is created for an institute that is located.An education
                              
                             </Card.Text>
+                            <Link href="https://github.com/Thisarahetz/Shilpa-eims-frontend">
                             <Button variant="primary">Source code</Button>
+                            </Link>
                         </Card.Body>
                         </Card>
                     </SwiperSlide> 
@@ -84,29 +88,33 @@ const project = () => {
                                             width={900}
                                             height={480}/></Card>
                         <Card.Body className="bg-dark">
-                            <Card.Title className="text-light">Railway Booking Android Application</Card.Title>
+                            <Card.Title className="text-light underline">Railway Booking Android Application</Card.Title>
                             <Card.Text style={{ fontSize: '14px' }} className="text-light">
                             Here this application is used to ticket booking,seat 
 reserving, ticket checking, and reminding time schedule of Railway System
-                           
+
                             </Card.Text>
+                            <Link href="https://github.com/Thisarahetz/srilanka-railway-app">
                             <Button variant="primary">Source code</Button>
+                            </Link>
                         </Card.Body>
                         </Card>
                     </SwiperSlide>
                     <SwiperSlide className={styles.box}>
-                    <Card>
-                        <Image variant="top" src="/assets/projectImg/cavinimg.jpg" alt="Picture of the author" 
+                    <Card style={{ width: '28rem' }}>
+                        <Card variant="top"><Image src="/assets/projectImg/NIE-Website-Redesign-Prototype.png" alt="Railway Booking Android Application"
                                             width={900}
-                                            height={480}/>
-                                            
-                        <Card.Body className="bg-dark" >
-                            <Card.Title className="text-light">Card Title</Card.Title>
-                            <Card.Text  className="text-light" style={{ fontSize: '20px' }} >
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                                            height={480}/></Card>
+                        <Card.Body className="bg-dark">
+                            <Card.Title className="text-light underline">NIE-Website-Redesign-Prototype</Card.Title>
+                            <Card.Text style={{ fontSize: '14px' }} className="text-light">
+                            We have redesigned (NIE) Sri Lanka website as a group project in Third Year
+                             First Semester for Human Computer Interaction Module (SLIIT).
+
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Link href="https://www.behance.net/gallery/128582503/NIE-Website-Redesigned-Prototype">
+                            <Button variant="primary">Source code</Button>
+                            </Link>
                         </Card.Body>
                         </Card>
                     </SwiperSlide>

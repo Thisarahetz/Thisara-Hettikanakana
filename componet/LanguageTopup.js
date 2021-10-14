@@ -12,7 +12,7 @@ const LanguageTopup = (props) => {
         <div className="grid grid-cols-1 justify-items-center">
         <img width="8%" src={props.imageTag}/>
                   <h2 className="ml-2 mb-3 font-extrabol text-4xl">{props.title}</h2>
-    <CircularProgressbar className="w-60 h-80 ml-20 mr-10" 
+    <CircularProgressbar className="w-40 h-60 ml-20 mr-10" 
 
     
   value={props.percentage}
@@ -47,7 +47,7 @@ const LanguageTopup = (props) => {
     // Customize the text
     text: {
       // Text color
-      fill: '#f7f8f9',
+      fill: '#f7bd00',
       // Text size
       fontSize: '16px', 
       
