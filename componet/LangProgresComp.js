@@ -72,7 +72,7 @@ const LangProgres = () => {
         <>
                 
     
-    <div className="grid w-full min-h-screen text-gray-100 bg-gray-900 place-content-center">
+    <div className="relative grid w-full min-h-screen text-gray-100 bg-gray-900 place-content-center">
         <div className="p-6 space-y-6 bg-gray-800 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0">
             <div className="grid grid-cols-2 gap-6">
             <button className="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700" onClick={JavaScript}>JavaScript</button>
