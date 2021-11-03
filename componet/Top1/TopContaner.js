@@ -5,7 +5,6 @@ const TopContaner = () => {
     return ( 
         <>
       
-      <div className="texture">
         <Container className="container-top">
           <Row className="section-top">
             <Col xs={12} md={6} className="section-top-left mt-7">
@@ -49,7 +48,7 @@ const TopContaner = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      
     </>
      );
 }

@@ -7,7 +7,7 @@ import About from "./about";
 
 export default function Home() {
   return (
-    <div className="content_bg background">
+    <div className="flex flex-col">
       <Head>
       <link rel="shortcut icon" href="/assets/favicon.ico" />
         <title>Home</title>
