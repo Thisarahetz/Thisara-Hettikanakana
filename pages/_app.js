@@ -61,7 +61,7 @@ function MyApp({ Component, pageProps }) {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.4,
             width: 1,
           },
           collisions: {
@@ -80,7 +80,7 @@ function MyApp({ Component, pageProps }) {
               enable: true,
               value_area: 800,
             },
-            value: 80,
+            value: 60,
           },
           opacity: {
             value: 0.5,
@@ -90,7 +90,7 @@ function MyApp({ Component, pageProps }) {
           },
           size: {
             random: true,
-            value: 5,
+            value: 2,
           },
         },
         detectRetina: true,
