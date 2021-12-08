@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
 
 const Footer = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_s06dc7i', 'template_s4obx5o', form.current, 'user_d7zo3e2IRFVhw90sabWxf')
+        .then((result) => {
+            //console.log(result.text);
+            if(result.text=='OK'){
+                swal("Done!", "Your message has been sent !", "success");
+            }else{
+                swal("error!", "Try again !", "error");
+            }
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
     return (
         <>
             
@@ -45,20 +64,20 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <form className="p-6 flex flex-col justify-center">
+                    <form className="p-6 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
                         <div className="flex flex-col">
                             <label htmlFor="name" className="hidden">Full Name</label>
-                            <input type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></input>
+                            <input type="name" name="user_name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></input>
                         </div>
 
                         <div className="flex flex-col mt-2">
                             <label htmlFor="email" className="hidden">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></input>
+                            <input type="email" name="user_email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></input>
                         </div>
 
                         <div className="flex flex-col mt-2">
-                            <label htmlFor="tel" className="hidden">Number</label>
-                            <input type="tel" name="tel" id="tel" placeholder="Telephone Number" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></input>
+                            <label htmlFor="tel" className="hidden">Message</label>
+                            <textarea name="message" name="message" id="tel" placeholder="Contract Number & Message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <button type="submit" className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
