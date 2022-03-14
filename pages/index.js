@@ -12,6 +12,7 @@ export default function Home() {
       <link rel="shortcut icon" href="/assets/favicon.ico" />
         <title>Home</title>
         <meta name="Keyword" content="Thisara Hettikankanama"/>
+        <meta name="google-site-verification" content="google-site-verification=glYwXaHbTfiPnolEmN1SSa6Izj9Rm_8shN8e_pmn66o"/>
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
